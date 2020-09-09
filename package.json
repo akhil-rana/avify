@@ -2,6 +2,8 @@
   "name": "avify",
   "version": "0.1.0",
   "private": true,
+  "main": "src/electron.js",
+  "homepage": "./",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -11,10 +13,14 @@
     "react-scripts": "3.4.3"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "nf start -p 3000",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-script",
+    "electron": "electron .",
+    "electron-watch": "nodemon --exec electron .",
+    "electron-start": "node src/wait-for-react",
+    "react-start": "react-scripts start"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -30,5 +36,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "electron": "^10.1.1",
+    "foreman": "^3.0.1",
+    "nodemon": "^2.0.4"
   }
 }
