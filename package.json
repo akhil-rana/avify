@@ -2,9 +2,11 @@
   "name": "avify",
   "version": "0.1.0",
   "private": true,
-  "main": "src/electron.js",
+  "main": "src/electron-starter.js",
   "homepage": "./",
   "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
@@ -13,14 +15,14 @@
     "react-scripts": "3.4.3"
   },
   "scripts": {
-    "start": "nf start -p 3000",
+    "react-script": "react-scripts start",
+    "start": "nf start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-script",
     "electron": "electron .",
     "electron-watch": "nodemon --exec electron .",
-    "electron-start": "node src/wait-for-react",
-    "react-start": "react-scripts start"
+    "electron-dev": "ELECTRON_START_URL=http://localhost:3000 electron ."
   },
   "eslintConfig": {
     "extends": "react-app"
