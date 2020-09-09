@@ -12,7 +12,8 @@
     "@testing-library/user-event": "^7.2.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.3"
+    "react-scripts": "3.4.3",
+    "sharp": "^0.26.0"
   },
   "scripts": {
     "react-script": "react-scripts start",
@@ -41,6 +42,7 @@
   },
   "devDependencies": {
     "electron": "^10.1.1",
+    "electron-rebuild": "^2.0.2",
     "foreman": "^3.0.1",
     "nodemon": "^2.0.4"
   }
