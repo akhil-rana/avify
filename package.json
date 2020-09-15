@@ -2,7 +2,7 @@
   "name": "avify",
   "version": "0.1.0",
   "private": true,
-  "main": "src/electron-starter.js",
+  "main": "src/main/electron-starter.js",
   "homepage": "./",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
@@ -10,10 +10,11 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "electron-log": "^4.2.4",
+    "gm": "^1.23.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.3",
-    "sharp": "^0.26.0"
+    "react-scripts": "3.4.3"
   },
   "scripts": {
     "react-script": "react-scripts start",
@@ -44,6 +45,7 @@
     "electron": "^10.1.1",
     "electron-rebuild": "^2.0.2",
     "foreman": "^3.0.1",
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4",
+    "spawn-sync": "^2.0.0"
   }
 }
